@@ -252,4 +252,104 @@ body {
     color: #fff;
     font-size: 1em;
   }
+
+  /* --- MEDIA QUERIES PARA HACERLO RESPONSIVE --- */
+@media (max-width: 768px) {
+    
+  .scroll-text {
+      font-size: 1.5em;
+  }
+
+  .contenido-museo {
+      padding: 30px 10px;
+  }
+
+  .secciones {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
+  }
+
+  .puerta {
+      width: 150px;
+      height: 220px;
+  }
+
+  .titulo-puerta {
+      font-size: 1.1em;
+  }
+
+  #entrarBtn {
+      font-size: 1.2em;
+      padding: 8px 16px;
+  }
+
+  .sala {
+      padding: 30px 10px;
+  }
+
+  .sala img {
+      width: 150px;
+  }
+
+  .spotify-player {
+      grid-template-columns: 1fr;
+      padding: 20px;
+  }
+
+  .spotify-player iframe {
+      height: 120px;
+  }
+
+  .galeria-peliculas {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .tarjeta-pelicula {
+      width: 40%;
+  }
+
+  .tarjeta-pelicula img {
+      height: 250px;
+  }
+
+  .volver button {
+      font-size: 1em;
+      padding: 8px 16px;
+  }
+
+  .final {
+      padding: 30px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-text {
+      font-size: 1.2em;
+  }
+
+  .puerta {
+      width: 120px;
+      height: 180px;
+  }
+
+  .titulo-puerta {
+      font-size: 1em;
+  }
+
+  #entrarBtn {
+      font-size: 1em;
+      padding: 6px 12px;
+  }
+
+  .sala img {
+      width: 120px;
+  }
+
+  .tarjeta-pelicula img {
+      height: 200px;
+  }
+}
   
