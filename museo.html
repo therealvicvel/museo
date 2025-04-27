@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Museo Intergaláctico</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script href="js/script.js"></script>
+  <audio id="doorSound" src="assets/door.mp3"></audio>
+</head>
+<body class="museo">
+
+  <div class="fondo-estrellas"></div>
+
+  <main class="contenido-museo">
+    <h1>Bienvenida al museo de tu universo :3 detrás de cada puerta espera una sorpresa</h1>
+
+    <div class="secciones">        
+      <div class="puerta" onclick="playDoorSound('secciones/musica.html')">
+      </div>
+      <div class="puerta" onclick="playDoorSound('secciones/peliculas.html')">
+      </div>
+      <div class="puerta" onclick="playDoorSound('secciones/cualidades.html')">
+      </div>
+      <!-- Puedes agregar más puertas aquí -->
+    </div>
+  </main>
+</body>
+<script>
+    function playDoorSound(url) {
+      const sound = document.getElementById('doorSound');
+      sound.play();
+      setTimeout(() => {
+        window.location.href = url;
+      }, 800); // da un pequeño tiempo para que el sonido suene antes de ir a la otra página
+    }
+  </script>
+</html>
