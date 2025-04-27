@@ -43,7 +43,6 @@ body {
 
   
   .fondo-estrellas {
-    background: url('https://i.imgur.com/8QfDQK3.png') repeat;
     background-size: contain;
     position: absolute;
     top: 0;
